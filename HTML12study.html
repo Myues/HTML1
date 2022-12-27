@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+        function copy(){
+            var a = document.getElementById("copy");
+            a.select();
+            document.execCommand("Copy");
+            alert("复制成功！");
+        }
+    </script>
+</head>
+<body>
+<textarea id="copy"></textarea>
+<input type="button" onclick="copy();" value="复制">
+</body>
+</html>
